@@ -19,7 +19,7 @@ go get -u gopkg.in/ezzarghili/recaptcha-go.v4
 ```go
 import "gopkg.in/ezzarghili/recaptcha-go.v4"
 func main(){
-    captcha := recaptcha.NewReCAPTCHA(recaptchaSecret, recaptcha.V2, 10*time.Second) // for v2 API get your secret from https://www.google.com/recaptcha/admin
+    captcha, _ := recaptcha.NewReCAPTCHA(recaptchaSecret, recaptcha.V2, 10*time.Second) // for v2 API get your secret from https://www.google.com/recaptcha/admin
 }
 ```
 
